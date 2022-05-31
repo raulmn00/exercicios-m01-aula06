@@ -8,12 +8,11 @@ let contador = 0;
 let somaNotas = 0;
 
 let qtdAlunos = +prompt("Digite quantos alunos você deseja cadastrar: ");
-while (qtdAlunos != 0) {
-  nomesAlunos.push(prompt(`Digite o nome do aluno ${contador + 1}: `));
-  notasAlunos.push(+prompt(`Digite a nota do aluno ${contador + 1}: `));
-  somaNotas += notasAlunos[contador];
-  qtdAlunos--;
-  contador++;
+
+for(let index = 0; index < qtdAlunos; index++){
+    nomesAlunos.push(prompt(`Digite o nome do aluno ${index + 1}: `));
+    notasAlunos.push(+prompt(`Digite a nota do aluno ${index + 1}: `));
+    somaNotas += notasAlunos[index];
 }
 console.log();
 for (let i = 0; i < notasAlunos.length; i++) {
