@@ -4,15 +4,14 @@ console.clear();
 let notasAlunos = [];
 let nomesAlunos = [];
 
-let contador = 0;
 let somaNotas = 0;
 
 let qtdAlunos = +prompt("Digite quantos alunos você deseja cadastrar: ");
 
-for(let index = 0; index < qtdAlunos; index++){
-    nomesAlunos.push(prompt(`Digite o nome do aluno ${index + 1}: `));
-    notasAlunos.push(+prompt(`Digite a nota do aluno ${index + 1}: `));
-    somaNotas += notasAlunos[index];
+for (let index = 0; index < qtdAlunos; index++) {
+  nomesAlunos.push(prompt(`Digite o nome do aluno ${index + 1}: `));
+  notasAlunos.push(+prompt(`Digite a nota do aluno ${index + 1}: `));
+  somaNotas += notasAlunos[index];
 }
 console.log();
 for (let i = 0; i < notasAlunos.length; i++) {
